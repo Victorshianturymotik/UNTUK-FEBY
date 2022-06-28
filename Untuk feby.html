@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>UNTUK FEBY</title>
+
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+
+<body>
+  <center>
+    <audio source="D:\Website\Tak ingin usai.mp3" autoplay loop></audio>
+    <font size="6" face="Poppins medium">Selamat pagi yanggg!!!</font><br>
+    <img width="400" height="400"
+      <source src ="DSCF0081.jpg"/>
+    </br>
+    </br>
+    <font size="5" face="Poppins medium">Ada 2 pesan Mohon diliat yah... </font>
+    </br>
+    </br>
+
+    <button class="btn btn-success btn-md" id="btn_mau" onclick="alert('Jangan lupa makan & minum obat')">Pesan 1</button>
+    
+    <button class="btn btn-danger btn-md" id="btn_gamau" onclick="alert('Semoga cepat sembuh,Have A Nice Day sygg')">Pesan 2</button>
+</center>
+</body>
+
+
+<script>
+    function gamau(id){
+        var mau = document.getElementById("btn_mau");
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+
+        id.style.left = i + "px";
+        id.style.top  = j + "px";
+    }
+</script>
+</html>
